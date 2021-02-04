@@ -20,6 +20,6 @@ jobs:
         with:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-          registry: docker.pkg.github.com
+          registry: ghcr.io
           repository: rhythmictech/docker-graylog-integrations-plugin/graylog-integrations-plugin
           tag_with_ref: true
