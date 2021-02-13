@@ -1,13 +1,14 @@
 name: build
 on:
   push:
-    branches: [ master ]
   pull_request:
+    
 jobs:
   build:
     name: Build
     runs-on: "ubuntu-18.04"
     steps:
+      
       - name: Checkout code
         uses: actions/checkout@v2
 
