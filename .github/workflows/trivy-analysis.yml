@@ -1,11 +1,11 @@
-name: build
+name: Vulnerability Scan (Trivy)
 on:
   push:
   pull_request:
     
 jobs:
   build:
-    name: Build
+    name: Build and Scan
     runs-on: "ubuntu-18.04"
     steps:
       
