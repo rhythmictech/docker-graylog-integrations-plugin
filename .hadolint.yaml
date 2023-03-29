@@ -1,5 +1,0 @@
-
-
-ignored:
-  - DL3018 # pinning versions for everything is tedious
-  - SC1091 # venv file not included bc it gets downloaded during build
