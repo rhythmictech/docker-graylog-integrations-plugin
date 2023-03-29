@@ -10,13 +10,13 @@ repos:
   ########################################
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.4.0
+    rev: v4.4.0
     hooks:
-      - id: end-of-file-fixer # add newlines
-      - id: trailing-whitespace # get rid of trailing whitespace
-      - id: no-commit-to-branch # don't commit to master
-      - id: check-added-large-files # no files over x kb
-      - id: check-symlinks # no pointless symlinks
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: no-commit-to-branch
+      - id: check-added-large-files
+      - id: check-symlinks
 
   ########################################
   # Docker
@@ -26,3 +26,8 @@ repos:
     rev: 1.0.1
     hooks:
       - id: hadolint
+
+  -   repo: https://github.com/koalaman/shellcheck-precommit
+      rev: v0.9.0
+      hooks:
+      -   id: shellcheck
